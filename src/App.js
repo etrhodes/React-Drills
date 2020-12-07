@@ -1,9 +1,9 @@
 import React from 'react';
-import Tabs from './state/Tabs';
+import Accordion from './state-drills/Accordion';
 
-class App extends React.Component {
+/*class App extends React.Component {
   static defaultProps = { 
-    tabs: [
+    section: [
     { name: 'First tab',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.' },
   { name: 'Second tab',
@@ -39,7 +39,18 @@ class App extends React.Component {
       <div>
         {this.renderButtons()}
         {this.props.tabs.length && this.renderContent()}
-        </div>
+      </div>
+    )
+  }
+}
+*/
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Accordion />
+      </div>
     )
   }
 }
